@@ -1,0 +1,22 @@
+extends ../templates/template 
+block menu 
+    include ../includes/main-menu
+block title 
+    h1.title Home
+block main
+    #gallery.gallery
+        .gallery__item
+            img(src="assets/images/gallery/1.jpg", alt="Imagen de galeria 1")
+        .gallery__item
+            img(src="assets/images/gallery/2.jpg", alt="Imagen de galeria 1")
+        .gallery__item
+            img(src="assets/images/gallery/3.jpg", alt="Imagen de galeria 1")
+        .gallery__item
+            img(src="assets/images/gallery/4.jpg", alt="Imagen de galeria 1")
+        .gallery__item
+            img(src="assets/images/gallery/5.jpg", alt="Imagen de galeria 1")
+   
+        
+block scripts
+   script(src="js/macy.js") 
+    

@@ -1,0 +1,36 @@
+
+include ../config/config
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        link(rel="stylesheet", href="css/styles.css")
+        <script src="https://kit.fontawesome.com/fcc2559b13.js" crossorigin="anonymous"></script>
+        title web
+    body 
+       header#header.header
+            a(href="/").logo
+                img(src="./assets/images/logo-2.png", alt="web logo") 
+            #topbar.topbar
+                .topbar__icon(data-type="login")
+                    i.fa.fa-user
+                    span Log in
+                .topbar__icon(data-type="register")
+                    i.fa.fa-user-plus  
+                    span Registrer 
+                .toggle-menu
+                    #toggle-menu.toggle-menu__icon
+                        .first-bar 
+                        .second-bar 
+                        .third-bar     
+       #sidebar.sidebar
+            block menu 
+       main.main 
+            block title
+            block main
+       include ../includes/login-modal
+       include ../includes/register-modal
+       block scripts
+       script(src="js/scripts-min.js") 

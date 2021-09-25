@@ -1,0 +1,24 @@
+//Configuración guia de estilos
+@import 'config/colors';
+@import 'config/fonts';
+
+//Mixins 
+@import 'mixins/breakpoints';
+@import 'mixins/reset-list';
+
+//Estilos base  
+@import 'base/normalize';
+@import 'base/base';
+
+//Bloques
+@import 'blocks/header';
+@import 'blocks/topbar';
+@import 'blocks/toggle-menu';
+@import 'blocks/menu';
+@import 'blocks/logo';
+@import 'blocks/sidebar';
+@import 'blocks/main';   
+@import 'blocks/lightbox';   
+@import 'blocks/forms';   
+@import 'blocks/titles';   
+

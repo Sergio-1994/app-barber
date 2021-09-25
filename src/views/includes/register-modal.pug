@@ -1,0 +1,20 @@
+//Formulario para registrar un usuario
+#register-modal.lightbox     
+    form#register-form.form
+        .form__field 
+            label(for="register-nom").form__label Name
+            input(type="text" name="nom")#register-nom.form__input
+        .form__field 
+            label(for="register-last-name").form__label Last Name
+            input(type="text" name="last-name")#register-last-name.form__input
+        .form__field 
+            label(for="register-phone").form__label Phone Number
+            input(type="text" name="phone")#register-phone.form__input
+        .form__field 
+            label(for="register-email").form__label Email
+            input(type="email" name="email")#register-email.form__input
+        .form__field 
+            label(for="register-password").form__label Password
+            input(type="password" name="password")#register-password.form__input
+        .form__field  
+            input(type="submit" name="button" value="Save")#register-submit.form__submit

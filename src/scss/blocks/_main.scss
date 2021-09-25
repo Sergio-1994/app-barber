@@ -1,0 +1,15 @@
+.main {
+  padding: 0.5rem 1rem;
+
+  @include laptop {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    padding: 0 2rem;
+  }
+}
+
+.gallery img {
+  max-width: 100%;
+  max-height: 100%;
+
+}
